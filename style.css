@@ -8,7 +8,6 @@
 .navbar-brand {
   margin-left: 10px;
 }
-
 .logo {
   height: 30px;
   width: 30px;
@@ -133,4 +132,20 @@
     padding: 9px 16px;
   }
   /*-----------------------------------end about us @media------------------------------------*/
+  /*-----------------------------------navbar start 991 @media------------------------------------*/
+}
+@media (max-width: 991px) {
+  .navbar .container-fluid {
+    display: flex;
+    justify-content: space-between; /* Aligns the brand to the left and the toggler to the right */
+    align-items: center; /* Centers items vertically */
+  }
+  .navbar-brand {
+    margin-left: 0; /* Ensures the brand title stays on the left */
+    text-align: left; /* Keeps text aligned to the left */
+    flex-grow: 1; /* Makes the brand take up space, pushing the toggler to the right */
+  }
+  .navbar-toggler {
+    margin-right: 0; /* Ensures the toggler (burger icon) stays on the right */
+  } /*-----------------------------------navbar end 991 @media------------------------------------*/
 }
