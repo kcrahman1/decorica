@@ -99,7 +99,38 @@
 /*--------------------------------------------------------------------------------------------------------*/
 /*         end About us page                                                      */
 /*--------------------------------------------------------------------------------------------------------*/
-
+.misscon {
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  margin-top: -50px;
+}
+.mission {
+  display: flex;
+}
+.mission h3 {
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 300;
+}
+.mission p {
+  font-size: 19px;
+  line-height: 1.5;
+  color: #4e4f4f;
+}
+.mission .ms-3 {
+  margin-left: 15px;
+}
+.mission h3,
+.mission p {
+  margin-left: 20px; /* Removes default margin to prevent spacing issues */
+}
+.mission img {
+  height: 50px;
+  width: auto;
+}
+.viscon {
+  margin-top: 30px;
+}
 /*--------------------------------------------------------------------------------------------------------*/
 /*         end vision & mission page                                                      */
 /*--------------------------------------------------------------------------------------------------------*/
@@ -131,7 +162,23 @@
   .article .content .button a {
     padding: 9px 16px;
   }
-  /*-----------------------------------end about us @media------------------------------------*/
+  /*---------------end about us @media------------------------------------*/
+  .mission {
+    flex-direction: column;
+    align-items: center; /* Centers the items horizontally */
+    text-align: center; /* Centers text under the icon */
+  }
+  .mission h3,
+  .mission p {
+    margin-left: 0px; /* Removes default margin to prevent spacing issues */
+  }
+  .viscon {
+    margin-top: -20px;
+  }
+  /*---------------missio end @media------------------------------------*/
+
+  /*---------------end galery @media------------------------------------*/
+
   /*-----------------------------------navbar start 991 @media------------------------------------*/
 }
 @media (max-width: 991px) {
