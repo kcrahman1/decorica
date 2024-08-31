@@ -166,11 +166,14 @@
   .mission {
     flex-direction: column;
     align-items: center; /* Centers the items horizontally */
-    text-align: center; /* Centers text under the icon */
+    text-align: left; /* Centers text under the icon */
   }
   .mission h3,
   .mission p {
     margin-left: 0px; /* Removes default margin to prevent spacing issues */
+  }
+  .mission p {
+    font-size: 15px;
   }
   .viscon {
     margin-top: -20px;
