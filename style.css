@@ -103,7 +103,7 @@
   font-weight: 300;
 }
 .miscon p {
-  margin-top: 10px;
+  margin-top: 0;
   font-size: 18px;
   line-height: 1.5;
   color: #4e4f4f;
@@ -114,7 +114,6 @@
   align-items: center; /* Align items vertically */
   justify-content: left; /* Center items horizontally */
   text-align: left; /* Center text */
-  gap: 5px; /* Space between image and text */
 }
 .mirow,
 .virow {
@@ -125,7 +124,7 @@
 /*-----------------------------------------------@media start---------------------------------------------*/
 @media screen and (max-width: 768px) {
   .abtext h1 {
-    font-size: 30px;
+    font-size: 25px;
   }
   .abtext .button a {
     padding: 9px 16px;
@@ -134,7 +133,8 @@
     display: block;
   }
   .virow {
-    margin-top: 60px;
+    margin-top: 50px;
+    width: 100%;
   }
 }
 
@@ -156,5 +156,10 @@
   }
   .abimg {
     margin-top: 50px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .mirow {
+    margin-top: 25px;
   }
 }
