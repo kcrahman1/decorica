@@ -137,6 +137,10 @@
   .abtext .button a {
     padding: 9px 16px;
   }
+  .mission img {
+    height: 50px;
+    width: auto;
+  }
   .misscon {
     margin-top: 0;
   }
