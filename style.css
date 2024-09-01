@@ -37,51 +37,42 @@
 /*--------------------------------------------------------------------------------------------------------*/
 /*         end frist page                                                      */
 /*--------------------------------------------------------------------------------------------------------*/
-.abtus {
-  width: 100%;
-  min-height: 100vh;
+.abcom {
+  display: flex;
+  margin-top: 100px;
   font-family: "Montserrat", sans-serif;
+  padding-bottom: 100px;
 }
-.abtcont {
-  width: 90%;
-  display: block;
-  margin: auto;
-  padding-top: 100px;
+
+.abimg img {
+  width: 100%; /* Makes the image fill the container */
+  height: auto; /* Keeps the image's aspect ratio */
+  display: block; /* Removes any extra space below the image */
 }
-.article {
-  float: left;
-  width: 60%;
-  padding-right: 25px;
+.abtext {
+  width: 80%;
 }
-.image-section {
-  float: right;
-  width: 40%;
-}
-.image-section img {
-  width: 100%;
-  height: auto;
-}
-.article .title h1 {
+.abtext h1 {
   text-transform: uppercase;
   font-size: 45px;
   font-weight: 300;
 }
-.article .content h3 {
+.abtext h3 {
   margin-top: 30px;
   color: #494a4a;
   font-size: 22px;
   font-weight: 500;
 }
-.article .content p {
+.abtext p {
   margin-top: 10px;
   font-size: 19px;
   line-height: 1.5;
   color: #4e4f4f;
 }
-.article .content .button {
+.abtext .button {
   margin-top: 45px;
 }
-.article .content .button a {
+.abtext .button a {
   background-color: #f19a0e;
   padding: 10px 18px;
   text-decoration: none;
@@ -92,17 +83,16 @@
   font-weight: 400;
   border-radius: 8px;
 }
-.article .content .button a:hover {
+.abtext .button a:hover {
   background-color: #000;
   transition: 0.5s ease;
 }
-/*--------------------------------------------------------------------------------------------------------*/
-/*         end About us page                                                      */
-/*--------------------------------------------------------------------------------------------------------*/
+/*---------end about us-----------------------------------------------------------------------------------------------*/
 .misscon {
   width: 100%;
   font-family: "Montserrat", sans-serif;
-  margin-top: -50px;
+  margin-top: 50px;
+  margin-left: 0px;
 }
 .mission {
   display: flex;
@@ -117,85 +107,74 @@
   line-height: 1.5;
   color: #4e4f4f;
 }
-.mission .ms-3 {
-  margin-left: 15px;
-}
+
 .mission h3,
 .mission p {
-  margin-left: 20px; /* Removes default margin to prevent spacing issues */
+  text-align: left;
+}
+.mtext {
+  margin-left: -7px;
 }
 .mission img {
-  height: 50px;
+  height: 100px;
   width: auto;
+  margin-top: -25px;
+}
+.viscon img {
+  height: 90px;
+  width: auto;
+  margin-left: 8px;
 }
 .viscon {
   margin-top: 30px;
 }
-/*--------------------------------------------------------------------------------------------------------*/
-/*         end vision & mission page                                                      */
-/*--------------------------------------------------------------------------------------------------------*/
+/*-----end mission ---------------------------------------------------------------------------------------------------*/
 /*-----------------------------------------------@media start---------------------------------------------*/
 @media screen and (max-width: 768px) {
-  .container {
-    width: 80%;
-    display: block;
-    margin: auto;
-    padding-top: 50px;
-  }
-  .article {
-    float: none;
-    width: 100%;
-    display: block;
-    margin: auto;
-  }
-  .image-section {
-    float: none;
-    width: 100%;
-    margin-top: 50px;
-  }
-  .article .title h1 {
+  .abtext h1 {
     font-size: 30px;
   }
-  .article .content .button {
-    text-align: center;
-  }
-  .article .content .button a {
+  .abtext .button a {
     padding: 9px 16px;
   }
-  /*---------------end about us @media------------------------------------*/
+  .misscon {
+    margin-top: 0;
+  }
   .mission {
     flex-direction: column;
-    align-items: center; /* Centers the items horizontally */
-    text-align: left; /* Centers text under the icon */
+    align-items: center;
   }
   .mission h3,
   .mission p {
-    margin-left: 0px; /* Removes default margin to prevent spacing issues */
+    margin-left: 0px;
   }
-  .mission p {
-    font-size: 15px;
+  .viscon img {
+    margin-left: 0px;
   }
-  .viscon {
-    margin-top: -20px;
+  .mtext,
+  .vtext {
+    padding: 30px;
   }
-  /*---------------missio end @media------------------------------------*/
-
-  /*---------------end galery @media------------------------------------*/
-
-  /*-----------------------------------navbar start 991 @media------------------------------------*/
+  /*---end abt us media 768------*/
 }
-@media (max-width: 991px) {
+
+/*-------end 768 media------------------*/
+@media screen and (max-width: 991px) {
   .navbar .container-fluid {
     display: flex;
     justify-content: space-between; /* Aligns the brand to the left and the toggler to the right */
-    align-items: center; /* Centers items vertically */
+    align-items: center;
   }
   .navbar-brand {
     margin-left: 0; /* Ensures the brand title stays on the left */
     text-align: left; /* Keeps text aligned to the left */
     flex-grow: 1; /* Makes the brand take up space, pushing the toggler to the right */
   }
-  .navbar-toggler {
-    margin-right: 0; /* Ensures the toggler (burger icon) stays on the right */
-  } /*-----------------------------------navbar end 991 @media------------------------------------*/
+  .abcom {
+    flex-direction: column;
+    align-items: center;
+  }
+  .abimg {
+    margin-top: 50px;
+  }
 }
