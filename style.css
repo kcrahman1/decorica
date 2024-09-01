@@ -136,6 +136,10 @@
     margin-top: 50px;
     width: 100%;
   }
+  .miscon img {
+    width: 50px;
+    height: auto;
+  }
 }
 
 /*-------end 768 media------------------*/
