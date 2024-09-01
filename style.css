@@ -124,7 +124,7 @@
 /*-----------------------------------------------@media start---------------------------------------------*/
 @media screen and (max-width: 768px) {
   .abtext h1 {
-    font-size: 25px;
+    font-size: 30px;
   }
   .abtext .button a {
     padding: 9px 16px;
@@ -132,12 +132,15 @@
   .miscon {
     display: block;
   }
+  .miscon h3 {
+    font-size: 22px;
+  }
   .virow {
     margin-top: 50px;
     width: 100%;
   }
   .miscon img {
-    width: 50px;
+    width: 85px;
     height: auto;
   }
 }
