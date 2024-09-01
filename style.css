@@ -91,9 +91,8 @@
 .miscon {
   display: flex;
   font-family: "Montserrat", sans-serif;
-  gap: 20px;
-  flex-direction: column;
   align-items: center;
+  gap: 60px;
 }
 .miscon img {
   width: 100px;
@@ -113,9 +112,14 @@
 .vision {
   display: flex;
   align-items: center; /* Align items vertically */
-  justify-content: center; /* Center items horizontally */
+  justify-content: left; /* Center items horizontally */
   text-align: left; /* Center text */
-  gap: 30px; /* Space between image and text */
+  gap: 5px; /* Space between image and text */
+}
+.mirow,
+.virow {
+  display: flex;
+  align-items: center;
 }
 /*-----end mission ---------------------------------------------------------------------------------------------------*/
 /*-----------------------------------------------@media start---------------------------------------------*/
@@ -126,7 +130,14 @@
   .abtext .button a {
     padding: 9px 16px;
   }
+  .miscon {
+    display: block;
+  }
+  .virow {
+    margin-top: 60px;
+  }
 }
+
 /*-------end 768 media------------------*/
 @media screen and (max-width: 991px) {
   .navbar .container-fluid {
