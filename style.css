@@ -119,6 +119,15 @@
   display: flex;
 }
 /*-----end mission ---------------------------------------------------------------------------------------------------*/
+.catie h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  height: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 70px;
+  margin-bottom: 30px;
+}
 .catco img {
   border-style: solid;
   border-color: aliceblue;

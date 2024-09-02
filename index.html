@@ -179,8 +179,9 @@
     <!---------mission and vishon----------->
 
     <div class="container catco d-block">
+      <div class="catie"><h1 class="wallh1">Wall Decor</h1></div>
       <div class="row">
-        <div class="col-lg-3 mb-5">
+        <div class="col-lg-3">
           <div class="card" style="width: auto">
             <img src="img/WALL.png" class="card-img-top" alt="..." />
             <div class="card-body">
@@ -228,11 +229,28 @@
     </div>
 
     <div class="container coco" id="Contact">
-      <h1>Cotact Us</h1>
+      <h1>Contact Us</h1>
       <form>
-        <input type="text" placeholder="Your Name" />
-        <input type="email" placeholder="Your Email" />
-        <textarea placeholder="Your Message"></textarea>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Your Name"
+          autocomplete="name"
+        />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Your Email"
+          autocomplete="email"
+        />
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Your Message"
+          autocomplete="off"
+        ></textarea>
         <button type="submit">Send</button>
       </form>
     </div>
