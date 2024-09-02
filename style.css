@@ -103,7 +103,6 @@
   font-weight: 300;
 }
 .miscon p {
-  margin-top: 0;
   font-size: 18px;
   line-height: 1.5;
   color: #4e4f4f;
@@ -111,14 +110,13 @@
 .mission,
 .vision {
   display: flex;
-  align-items: center; /* Align items vertically */
-  justify-content: left; /* Center items horizontally */
-  text-align: left; /* Center text */
+  align-items: center;
+  justify-content: left;
+  text-align: left;
 }
 .mirow,
 .virow {
   display: flex;
-  align-items: center;
 }
 /*-----end mission ---------------------------------------------------------------------------------------------------*/
 /*-----------------------------------------------@media start---------------------------------------------*/
@@ -167,6 +165,6 @@
 }
 @media (min-width: 1200px) and (max-width: 1400px) {
   .mirow {
-    margin-top: 25px;
+    margin-top: 20px;
   }
 }
