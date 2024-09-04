@@ -23,6 +23,11 @@
   height: 30px;
   width: 30px;
 }
+.dropdown-item {
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
 
 /*--------------------------------------------------------------------------------------------------------*/
 /*        end navbar                                                         */
