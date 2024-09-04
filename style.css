@@ -5,6 +5,17 @@
   padding: 0;
   box-sizing: border-box;
 }
+.navbar-collapse {
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  margin-top: 5px;
+}
+.nav-item a:hover {
+  font-weight: 500;
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
 .navbar-brand {
   margin-left: 10px;
 }
@@ -12,6 +23,7 @@
   height: 30px;
   width: 30px;
 }
+
 /*--------------------------------------------------------------------------------------------------------*/
 /*        end navbar                                                         */
 /*--------------------------------------------------------------------------------------------------------*/
@@ -119,19 +131,28 @@
   display: flex;
 }
 /*-----end mission ---------------------------------------------------------------------------------------------------*/
-.catie h1 {
+.card-body {
+  background-color: #edeae1;
+}
+.catie h3 {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   height: 50px;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 70px;
+  margin-top: 50px;
   margin-bottom: 30px;
+  line-height: 80px;
 }
-.catco img {
-  border-style: solid;
-  border-color: aliceblue;
-  border-width: 10px;
+.card {
+  overflow: hidden;
+}
+
+.catco img:hover {
+  transform: scale(1.1);
+}
+.catco {
+  padding-bottom: 50px;
 }
 
 /*-----end category ---------------------------------------------------------------------------------------------------*/
