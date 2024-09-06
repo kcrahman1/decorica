@@ -179,6 +179,8 @@
 
 .card {
   overflow: hidden;
+
+
 }
 
 .catco img:hover {
@@ -277,41 +279,47 @@ form button:hover {
   }
 
   .card {
-    padding: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
 
   }
-}
 
-/*-------End 768 media------------------*/
-@media screen and (max-width: 991px) {
-  .navbar .container-fluid {
-    display: flex;
-    justify-content: space-between;
-    /* Aligns the brand to the left and the toggler to the right */
-    align-items: center;
+  .catco img {
+    overflow: hidden;
   }
 
-  .navbar-brand {
-    margin-left: 0;
-    /* Ensures the brand title stays on the left */
-    text-align: left;
-    /* Keeps text aligned to the left */
-    flex-grow: 1;
-    /* Makes the brand take up space, pushing the toggler to the right */
+
+
+  /*-------End 768 media------------------*/
+  @media screen and (max-width: 991px) {
+    .navbar .container-fluid {
+      display: flex;
+      justify-content: space-between;
+      /* Aligns the brand to the left and the toggler to the right */
+      align-items: center;
+    }
+
+    .navbar-brand {
+      margin-left: 0;
+      /* Ensures the brand title stays on the left */
+      text-align: left;
+      /* Keeps text aligned to the left */
+      flex-grow: 1;
+      /* Makes the brand take up space, pushing the toggler to the right */
+    }
+
+    .abcom {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .abimg {
+      margin-top: 50px;
+    }
   }
 
-  .abcom {
-    flex-direction: column;
-    align-items: center;
+  @media (min-width: 1200px) and (max-width: 1400px) {
+    .mirow {
+      margin-top: 20px;
+    }
   }
-
-  .abimg {
-    margin-top: 50px;
-  }
-}
-
-@media (min-width: 1200px) and (max-width: 1400px) {
-  .mirow {
-    margin-top: 20px;
-  }
-}
