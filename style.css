@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-margin-top: 90px;
 }
 
 .navbar-collapse {
@@ -250,6 +251,12 @@ form button:hover {
 
 /*-----------------------------------------------@media start---------------------------------------------*/
 @media screen and (max-width: 768px) {
+  * {
+    scroll-margin-top: 400PX;
+  }
+
+
+
   .abtext h1 {
     font-size: 30px;
   }
@@ -289,37 +296,40 @@ form button:hover {
   }
 
 
+}
 
-  /*-------End 768 media------------------*/
-  @media screen and (max-width: 991px) {
-    .navbar .container-fluid {
-      display: flex;
-      justify-content: space-between;
-      /* Aligns the brand to the left and the toggler to the right */
-      align-items: center;
-    }
 
-    .navbar-brand {
-      margin-left: 0;
-      /* Ensures the brand title stays on the left */
-      text-align: left;
-      /* Keeps text aligned to the left */
-      flex-grow: 1;
-      /* Makes the brand take up space, pushing the toggler to the right */
-    }
 
-    .abcom {
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .abimg {
-      margin-top: 50px;
-    }
+/*-------End 768 media------------------*/
+@media screen and (max-width: 991px) {
+  .navbar .container-fluid {
+    display: flex;
+    justify-content: space-between;
+    /* Aligns the brand to the left and the toggler to the right */
+    align-items: center;
   }
 
-  @media (min-width: 1200px) and (max-width: 1400px) {
-    .mirow {
-      margin-top: 20px;
-    }
+  .navbar-brand {
+    margin-left: 0;
+    /* Ensures the brand title stays on the left */
+    text-align: left;
+    /* Keeps text aligned to the left */
+    flex-grow: 1;
+    /* Makes the brand take up space, pushing the toggler to the right */
   }
+
+  .abcom {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .abimg {
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .mirow {
+    margin-top: 20px;
+  }
+}
