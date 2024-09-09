@@ -7,6 +7,13 @@
   scroll-margin-top: 90px;
 }
 
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 5px;
+  z-index: 2;
+}
+
 /*------------------------------------full screen--------------------------------------*/
 /* Modal Styles */
 .modal {
@@ -165,6 +172,7 @@
 
 .abtext {
   width: 80%;
+  padding-right: 20px;
 }
 
 .abtext h1 {
