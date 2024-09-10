@@ -22,4 +22,21 @@ function closeModal() {
     document.getElementById('photoModal').style.display = 'none';
 }
 
+//-----------------google script contact---------------------//
+$("#submit-form").submit((e) => {
+    e.preventDefault()
+    $.ajax({
+        url: "https://script.google.com/macros/s/AKfycbyfK3jPjxJbuqr-rnAb2WLTwVWZcm5lxD_dZLnLUc8oiX8UaqQxv9ZmB4VaqJcApNCK_w/exec",
+        data: $("#submit-form").serialize(),
+        method: "post",
+        success: function (response) {
+            alert("Form submitted successfully")
+            window.location.reload()
+            window.location.href = "#"
+        },
+        error: function (err) {
+            alert("Something Error")
 
+        }
+    })
+})

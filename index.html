@@ -16,6 +16,7 @@
       rel="stylesheet"
     />
     <link rel="icon" href="favicon.ico" type="image/png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><!--GOOLE SHEET-->
   </head>
   <body>
     <div class="container" style="height: 60px"></div>
@@ -125,6 +126,13 @@
                 <li><a class="dropdown-item" href="#book">BOOK RACK</a></li>
               </ul>
             </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#Contact">
+                CONTACT US
+              </a>
+            </li>
+            
+            
           </ul>
         </div>
       </div>
@@ -999,41 +1007,60 @@
     </div><!-----------Ens BOOK RACK -->
 
 
-
-    <div class="container coco" id="Contact">
-      <h1>Contact Us</h1>
-      <form>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          placeholder="Your Name"
-          autocomplete="name"
-        />
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="Your Email"
-          autocomplete="email"
-        />
-        <textarea
-          id="message"
-          name="message"
-          placeholder="Your Message"
-          autocomplete="off"
-        ></textarea>
-        <button type="submit">Send</button>
-      </form>
-    </div>
-    <SEction>
-      <div class="whatsapp">
-        <a href="https://wa.me/+917222867867">
-          <img src="img/Whatsapp-logo.png" width="80 alt="/>
-        </a>		  		  	
+   
+    <!-- Contact Us form -->
+    <section id="contact" class="contact section-padding">
+      <div class="container mt-1 mb-1">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-header text-center ">
+              <h2>Contact Us</h2>
+              <p>
+              </p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="row m-0" style="margin-top: 100px;">
+          <div class="col-md-12 p-0 pt-2 pb-4">
+            <form id="submit-form" action="" class="bg-light p-4 m-auto">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="mb-3">
+                    <input class="form-control" placeholder="Full Name" required="" type="text" name="name" />
+                  </div>
+                </div>
+    
+                <div class="col-md-12">
+                  <div class="mb-3">
+                    <input class="form-control" placeholder="Email" required="" type="email" name="email" />
+                  </div>
+                </div>
+    
+                <div class="col-md-12">
+                  <div class="mb-3">
+                    <textarea class="form-control" placeholder="Message" required="" rows="3" name="message"></textarea>
+                  </div>
+                </div>
+        
+                <button class="btn btn-danger btn-lg btn-block mt-3" type="submit">Send Now</button>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
-  
-    </SEction>
+    </section>
+    
+    <!-- Whatsapp section -->
+    <section>
+      <div class="whatsapp">
+        <a href="https://wa.me/+971509626268">
+          <img src="img/Whatsapp-logo.png" width="80" alt="Whatsapp logo"/>
+        </a>              
+      </div>
+    </section>
+
+
     <!-- Full Screen Photo Modal -->
     <div id="photoModal" class="modal">
       <div class="modal-content-container">
